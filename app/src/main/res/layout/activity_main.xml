@@ -42,6 +42,7 @@
         android:layout_marginTop="56dp"
         android:text="Login"
         android:textColor="#FFFFFF"
+        android:backgroundTint="#008080"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
