@@ -7,6 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+import android.net.Uri
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +24,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun myClickHandler(view: View){
         Log.i("MainActivity","button clicked")
+        //var dialIntent: Intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:123456"))
+        //startActivity(dialIntent)
+        var webIntent:Intent = Intent(Intent.ACTION_VIEW,Uri.parse("https://www.vlr.gg"))
+        startActivity(webIntent)
     }
 }
